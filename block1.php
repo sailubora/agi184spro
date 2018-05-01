@@ -17,9 +17,9 @@ if (isset($_POST['reg_user'])) {
     $query_run = $db->query("DELETE FROM users  WHERE username='$username' ");
     
      if($query_run){
-       echo '<script>alert("DELETE Successfully!!!");</script>';
-      echo '<script>location.href="login.php"</script>';
-    }else{
+      echo "user delete";
+    }
+    else{
       echo "Can't delete";
     }
  

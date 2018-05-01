@@ -27,7 +27,9 @@ if (isset($_POST['reg_user'])) {
     //}
 
     if($query_run){
-      echo "UPDATED successfully";
+      //echo "UPDATED successfully";
+      echo '<script>alert("Updated Successfully!!!");</script>';
+      echo '<script>location.href="welcome.php"</script>';
     }else{
       echo "Can't Update";
     }

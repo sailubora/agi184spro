@@ -10,7 +10,8 @@
   	<h2>UPDATE</h2>
   </div>
 	<?php
-  $query= $db->query("SELECT * from users WHERE username='ram12'");
+  $username = $_SESSION['username'];
+  $query= $db->query("SELECT * from users WHERE username='$username';");
   while($row = mysqli_fetch_array($query))
   {
   
